@@ -1,7 +1,7 @@
+# Slack dark mode
+# Run this file through PowerShell
 # On windows 7 make sure you've updated your powershell version.
 # https://www.microsoft.com/en-us/download/confirmation.aspx?id=54616
-
-# Slack dark mode
 
 $slackBaseDir = "$env:LocalAppData\Slack"
 $installations = Get-ChildItem $slackBaseDir -Directory | Where-Object { $_.Name.StartsWith("app-") }
